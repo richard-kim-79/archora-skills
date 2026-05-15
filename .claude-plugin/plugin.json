@@ -1,0 +1,20 @@
+{
+  "name": "archora-research",
+  "version": "1.0.0",
+  "description": "Academic research agents — hypothesis generation, experiment design, paper drafting, peer review simulation, and more.",
+  "author": {
+    "name": "Archora",
+    "url": "https://archora2026.com"
+  },
+  "repository": "https://github.com/archora/archora-skills",
+  "license": "MIT",
+  "keywords": [
+    "research",
+    "academic",
+    "hypothesis",
+    "peer-review",
+    "paper-draft",
+    "science",
+    "wiki"
+  ]
+}
