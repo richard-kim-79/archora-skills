@@ -9,7 +9,7 @@ license: MIT
 metadata:
   author: archora
   version: "1.1"
-  website: https://archora2026.com
+  website: https://archora2026.com/
 ---
 
 # Figure Generator

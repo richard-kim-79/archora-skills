@@ -9,7 +9,7 @@ license: MIT
 metadata:
   author: archora
   version: "1.0"
-  website: https://archora2026.com
+  website: https://archora2026.com/
 ---
 
 # Paper Draft Generation

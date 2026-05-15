@@ -1,16 +1,21 @@
 # archora-skills
 
-Academic research agent skills for use with Claude Code and other [Agent Skills](https://agentskills.io)-compatible tools.
+[![Visit Archora](https://img.shields.io/badge/🌐%20archora2026.com-Visit%20Now-4f46e5?style=for-the-badge)](https://archora2026.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-archora--skills-181717?style=for-the-badge&logo=github)](https://github.com/richard-kim-79/archora-skills)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-Built on [Archora](https://archora2026.com) — a knowledge archiving platform for researchers and educators.
+Academic research agent skills for [Claude Code](https://claude.ai/code) and other [Agent Skills](https://agentskills.io)-compatible tools.
+
+> Built on **[Archora](https://archora2026.com/)** — a knowledge archive & social network for researchers and educators.
+> Run these same agents in your browser at **[archora2026.com](https://archora2026.com/)** ✨
 
 ## Installation
 
 ```bash
-npx skills add https://github.com/archora/archora-skills
+npx skills add https://github.com/richard-kim-79/archora-skills
 ```
 
-Or manually copy the `skills/` directory into your Claude Code project's `.claude/` folder.
+Or manually copy the `skills/` directory into your project's `.agents/skills/` folder.
 
 ## Skills
 
@@ -87,7 +92,18 @@ Skills are designed to chain together across a full research pipeline:
 
 ## About Archora
 
-[Archora](https://archora2026.com) is a research platform that runs these agents on your channels and wiki. Use the web app for team research workflows; use these skills for local file-based workflows with Claude Code.
+**[→ archora2026.com](https://archora2026.com/)**
+
+Archora is a research platform for academics and educators. Create channels, build wiki knowledge bases, and run AI research agents collaboratively in the browser.
+
+| | Web App | Claude Code Skills |
+|---|---|---|
+| **Best for** | Team workflows, shared channels | Local files, personal research |
+| **Setup** | Sign up at archora2026.com | `npx skills add` |
+| **Agents** | Runs on your wiki & posts | Runs on local Markdown files |
+| **Collaboration** | Multi-user, real-time | Single user |
+
+Both use the same agent logic — pick whichever fits your workflow.
 
 ## License
 
