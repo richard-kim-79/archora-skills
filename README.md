@@ -37,6 +37,54 @@ Once installed, these skills activate automatically when you ask Claude to perfo
 "What are the weaknesses in my argument?"
 ```
 
+## Recommended Workflow
+
+Skills are designed to chain together across a full research pipeline:
+
+```
+┌─────────────┐
+│  Raw Notes  │  (your Markdown files, PDFs, clippings)
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐     ┌──────────────┐
+│  wiki-sync  │────▶│  synthesis   │  Organize & surface cross-cutting themes
+└─────────────┘     └──────────────┘
+       │
+       ▼
+┌─────────────┐
+│ hypothesis  │  Generate falsifiable research questions
+└──────┬──────┘
+       │
+       ▼
+┌──────────────┐    ┌────────┐
+│  validation  │───▶│ figure │  Design experiments + visualize data
+└──────────────┘    └────────┘
+       │
+       ▼
+┌───────┐    ┌───────┐
+│ stats │    │ draft │  Validate claims + write IMRaD paper
+└───────┘    └───┬───┘
+                 │
+                 ▼
+    ┌─────────────────────┐
+    │ counterargument      │  Stress-test before submission
+    │ peer-review          │
+    └─────────────────────┘
+```
+
+**Quick start chain (copy-paste into Claude):**
+
+```
+1. "wiki-sync 해줘" — organize notes into wiki
+2. "이 노트들로 가설 생성해줘" — generate hypotheses
+3. "각 가설에 대한 실험 설계 제안해줘" — design experiments
+4. "통계 오류 확인해줘" — validate any stats
+5. "논문 초안 작성해줘" — write the draft
+6. "peer review 해줘" — simulate review
+7. "반론 생성해줘" — stress-test before submission
+```
+
 ## About Archora
 
 [Archora](https://archora2026.com) is a research platform that runs these agents on your channels and wiki. Use the web app for team research workflows; use these skills for local file-based workflows with Claude Code.

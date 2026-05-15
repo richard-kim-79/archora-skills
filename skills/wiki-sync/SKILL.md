@@ -7,7 +7,7 @@ description: >
 license: MIT
 metadata:
   author: archora
-  version: "1.0"
+  version: "1.1"
   website: https://archora2026.com
 ---
 
@@ -65,9 +65,32 @@ Organize research notes into a structured wiki knowledge base.
 | [[slug-2]] Page Title | One-line summary | YYYY-MM-DD |
 ```
 
+## Configuration
+
+Override defaults by adding a `wiki-sync.config.md` file in your notes directory:
+
+```markdown
+# Wiki Sync Config
+
+maxPages: 20
+outputDir: wiki/
+indexFile: index.md
+language: en
+```
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `maxPages` | `8` | Max pages created per sync run. Increase for large note collections. |
+| `outputDir` | `.` (same dir as notes) | Subdirectory to write wiki pages into |
+| `indexFile` | `index.md` | Filename for the auto-generated index |
+| `language` | `en` | Output language for generated text (`en`, `ko`, `ja`, etc.) |
+
+If no config file is present, all defaults apply.
+
 ## Rules
 
-- Maximum 8 pages created per sync run (avoid overwhelming the user)
+- Default max **8 pages** per sync run — override with `maxPages` in config (avoid overwhelming the user)
 - Prefer updating existing pages over creating new ones for incremental syncs
 - Never delete existing content — append or update sections
 - Always rebuild the index after adding pages
+- Respect `outputDir` if set in config — write all new pages there

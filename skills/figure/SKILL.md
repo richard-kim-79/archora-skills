@@ -8,7 +8,7 @@ description: >
 license: MIT
 metadata:
   author: archora
-  version: "1.0"
+  version: "1.1"
   website: https://archora2026.com
 ---
 
@@ -59,6 +59,31 @@ plt.show()
 - **Realistic placeholder data** — use domain-appropriate values and ranges
 - **Publication quality** — `dpi=300`, proper axis labels, legend, title
 - **Accessible colors** — avoid red/green only distinctions
+
+## Validation (always run after generating Python code)
+
+Before presenting code to the user, validate syntax with Python's AST parser:
+
+```bash
+python -c "import ast; ast.parse(open('figure1.py').read()); print('✅ Syntax OK')"
+```
+
+If the check fails, fix the syntax error and re-validate before showing the result.
+
+**For inline code blocks**, validate with:
+```python
+import ast
+code = """
+# paste generated code here
+"""
+try:
+    ast.parse(code)
+    print("✅ Syntax OK")
+except SyntaxError as e:
+    print(f"❌ Syntax error: {e}")
+```
+
+> Note: AST validation checks syntax only — it does not catch runtime errors (e.g. wrong data shapes). Always include comments explaining how to adapt placeholder data to real data.
 
 ## How to run
 
