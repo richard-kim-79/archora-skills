@@ -81,13 +81,13 @@ Skills are designed to chain together across a full research pipeline:
 **Quick start chain (copy-paste into Claude):**
 
 ```
-1. "wiki-sync 해줘" — organize notes into wiki
-2. "이 노트들로 가설 생성해줘" — generate hypotheses
-3. "각 가설에 대한 실험 설계 제안해줘" — design experiments
-4. "통계 오류 확인해줘" — validate any stats
-5. "논문 초안 작성해줘" — write the draft
-6. "peer review 해줘" — simulate review
-7. "반론 생성해줘" — stress-test before submission
+1. "sync my notes into a wiki"           — organize notes into wiki
+2. "generate hypotheses from my notes"   — generate hypotheses
+3. "design experiments for each hypothesis" — design experiments
+4. "validate my stats"                   — validate any stats
+5. "write the paper draft"               — write the draft
+6. "peer review this draft"              — simulate review
+7. "generate counterarguments"           — stress-test before submission
 ```
 
 ## About Archora
